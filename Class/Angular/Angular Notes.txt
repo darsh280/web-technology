@@ -1,0 +1,119 @@
+Q. Difference between angular and express
+Angular is typescript based fronted framework , developed by google
+It helps us build a single page application (SPA)
+SPA - where the page does not fully reload when navigation between different viwes.
+
+Angular Tools  -
+node js, npm (Node package manager), Angular CLI(Command Line Interface)
+
+CLI - Used for create and manage angulars applications
+
+IQ :-
+1.How to create angular project
+2.what is npm and ng
+
+ng - is a initials of angular
+
+commands - 
+> npm install -g @angular/cli
+> ng new project_name
+> ng serve 
+
+---------------------------------------08-04-2026------------------------------------------------------
+Angular folder structure - 
+package.json - packages list, includes dependancies
+dependancies - part of project development
+dev-dependancies - only used for local use
+angular.json- project configuration file
+style.css - global style file
+.gitignore - file and folders to excute from version control
+tfconfig- typescript configuration file
+index.html- main file
+app.congfig.js -- app configuration
+main.ts -- entry point of application
+src/app -- root folder
+
+// components - component is UI block structure 
+[command to create component - ng generate component component_name / ng g c component_name]
+
+--To bind new component steps - 
+   - for home componet--
+   -open home.ts then copy selector project_name
+   -then paste this in app.html inside <> brackets
+
+
+-----Data Binding------
+data binding connets UI to code
+
+types of data binding
+1.one way -
+ 1. interpolution -- show data from ts in html , syntax --{{}}
+ 2. property binding
+ 3. event binding
+
+2.two way -
+ -node modules
+
+ ---Data Binding ---- 13 April 2026
+Data binding is a binding technique it connects UI to code
+There are two types of data binding 
+1. One way 
+      1. interpolation --  syntax --{{value}}
+      - Show data from ts to html 
+      2. property binding --- Syntax-->  [property] = "value"
+      - Bind html property to ts variable
+      3. event binding --- Syntax --> (click) = 'function()'
+      - call function on event 
+   
+
+2.two way -
+ ngModel - sync data both ways ts to html and html to ts
+      [(ngModel)] = 'Value'
+
+
+Modules 
+- Before angular 15 we need ngModules
+- nowadays we are using angular 20+ version so modules are optional
+- uYou can now use standalone components
+- older angular --> modules
+- new angular --> components are used
+
+Directives
+- Think the directives like the magic wands that can change your web page without rewriting it
+- There are two types of directives structural and attribute directive
+1. Structural directives - change the structure of your page like add, remove or repeated things  --> ngIf, ngFor, ngSwitch
+2. Attribute directives - ng style
+
+
+Routing 
+- navigation between one page to another page is Routing
+- 
+
+Homeactivity 
+1. how we can use if else for loop switch case in angular with examples
+2. 
+
+
+-----------------15-04-2026-------------------------------------------------------
+#Directive Activity
+1.show - hide
+2.toggle
+3.if values equals show div else hide
+4.display the slected value in drop down list to the div 
+
+Services - 
+- command to create service:
+   > ng g s Services_name;
+
+Services Activity-
+1.write 2 ex with services in angular and learn more about dependancies injection
+
+
+--------------- 20-04-2026---------------------------------------
+Routing - navigation between one page to another page
+
+You have made change in 3 files
+1. app.routes.ts -- Bind all components
+2. app.ts
+3. app.html
+
